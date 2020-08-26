@@ -7,11 +7,9 @@
                 height: 100px;
                 width: 100px;
             }
-
         .imagens{
             margin-bottom: 10px;
         }
-
         .msg{
             color:red;
             font-weight: bold;
@@ -23,7 +21,6 @@
                 $("select[name='fideIn']").change(function() {
                     var valor = $("select[name='fideIn']").val(); 
                     var id = 'img'+valor;
-
                     var display =$("#"+id).css("display");
                     if(display != "none" && valor!= ""){
                         var texto ='<h3> Imagem '+valor+' já está amostra</h3>';
@@ -41,7 +38,6 @@
                     var valor = $("select[name='fideOut']").val(); 
                     var id = 'img'+valor;
                     var display =$("#"+id).css("display");
-
                     if(display == "none" && valor != ""){
                         var texto ='<h3> Imagem '+valor+' já oculta</h3>';
                         $("#mensagem").html(texto).css("color");
