@@ -1,0 +1,21 @@
+.container{
+	margin-top: 4%;
+}
+.eu{
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+}
+.cont{
+	position: absolute;  
+	left: 70%;
+	color:black;
+}
+a:link{
+	color: black;
+}
+
+.linha{
+	border-left: 2px solid black;
+  	height: 500px;
+}

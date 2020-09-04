@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <script src="jquery-3.5.1.min.js"></script>
-        <title>Exercício Compartilhado</title>
+        <title>Editor de Texto - AJAX-JEQUERY</title>
     </head>
     <style>
          #quadrado{
@@ -78,7 +78,7 @@
 
     <body>
         
-        <h3> Exercicio Compartilhado</h3>
+        <h3> Editor de Texto - AJAX-JEQUERY</h3><hr />
 		
         <img id="negrito" src="negrito.png" />
         <img id="italico" src="italico.png"/>
