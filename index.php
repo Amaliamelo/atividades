@@ -72,6 +72,10 @@
                             <td><span class="material-icons">keyboard_arrow_right</span>
                             <a href="20200902/index.php">  Procurando Cep- JSON</a><hr /></td>
                         </tr>
+                        <tr>
+                            <td><span class="material-icons">keyboard_arrow_right</span>
+                            <a href="20200910/index.php"> ATIVIDADE BIMESTRAL 1: Procurando Pesquisa de nomes_API IBGE</a><hr /></td>
+                        </tr>
                     </table>
                 </div>
             </div>
