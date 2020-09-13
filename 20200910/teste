@@ -1,0 +1,17 @@
+<script>
+            $(document).ready(function(){
+                if($("input[name='nome'").is(':empty')){
+                        $("input[name='nome'").focus();
+                }
+                else{
+                    $("input[name='nome'").blur(function(){
+                        console.log(nome);
+                        ano= $("input[name='ano'").val();
+                        $.getJSON("https://servicodados.ibge.gov.br/api/v2/censos/nomes/ranking/?decada="+ano+"", function(ranking) {
+                            $("#mensagem").htm(ranking); 
+                        });
+                    });
+                } 
+                           
+            });
+        </script>

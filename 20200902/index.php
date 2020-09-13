@@ -38,13 +38,11 @@
                         $("#uf").val("...");
 
                         $.getJSON("https://viacep.com.br/ws/"+ cep +"/json/?callback=?", function(endereco) {
-                            console.log(endereco.logradouro);
                             if (!("erro" in endereco)){
                                 $("#rua").val(endereco.logradouro);
                                 $("#bairro").val(endereco.bairro);
                                 $("#cidade").val(endereco.localidade);
                                 $("#uf").val(endereco.uf);
-                                $("#ibge").val(endereco.ibge);
                                 $("#numero").focus();
                             }
                             else {
