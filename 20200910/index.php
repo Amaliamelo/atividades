@@ -5,7 +5,7 @@
     <script src="jquery-3.5.1min.js"></script>
         <script>
             $(document).ready(function(){
-                //criando a promeira linha da tabela
+                //criando a primeira linha da tabela
                 var newRow = $("<tr>");	   
                 var cols = "";
                 cols += '<td colspan="3">Preencha o nome e o ano para verificar se este nome está entre os 20 mais frequentes da década</td>';   	
@@ -26,7 +26,7 @@
                         cols += '<td>'+(dados.frequencia)+'</td>';	   	    	
                         newRow.append(cols);	    
                         $("#table2").append(newRow);	
-                            return false;	  
+                        return false;	  
                  }
 
                 //Focando o nome e procurando dados
@@ -54,7 +54,7 @@
                     }
                 });     
 
-                // procurando os dados quando ocorre mudança no ano
+                //procurando os dados quando ocorre mudança no ano
                 $("input[name='ano'").change(function(){
                     n=$("input[name='nome'").val().toUpperCase();
                     ano= $("input[name='ano'").val();
