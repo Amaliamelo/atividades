@@ -80,6 +80,10 @@
                             <td><span class="material-icons">keyboard_arrow_right</span>
                             <a href="20200923/index.php"> Atividade em grupo - Taxonomia</a><hr /></td>
                         </tr>
+                        <tr>
+                            <td><span class="material-icons">keyboard_arrow_right</span>
+                            <a href="20200930/index.php"> Atividade em grupo - Taxonomia - FILTROS</a><hr /></td>
+                        </tr>
                     </table>
                 </div>
             </div>
