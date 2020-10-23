@@ -90,7 +90,7 @@
                         </tr>
                         <tr>
                             <td><span class="material-icons">keyboard_arrow_right</span>
-                            <a href="20201020/index.php"> ATIVIDADE BIMESTRAL 2: Playlist de Musica</a><hr /></td>
+                            <a href="20201020_/index.php"> ATIVIDADE BIMESTRAL 2: Playlist de Musica</a><hr /></td>
                         </tr>
                     </table>
                 </div>
