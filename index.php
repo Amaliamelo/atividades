@@ -88,6 +88,10 @@
                             <td><span class="material-icons">keyboard_arrow_right</span>
                             <a href="20201014/index.php"> Atividade em grupo - Taxonomia - Inserts</a><hr /></td>
                         </tr>
+                        <tr>
+                            <td><span class="material-icons">keyboard_arrow_right</span>
+                            <a href="20201020/index.php"> ATIVIDADE BIMESTRAL 2: Playlist de Musica</a><hr /></td>
+                        </tr>
                     </table>
                 </div>
             </div>
