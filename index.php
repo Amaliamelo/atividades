@@ -92,6 +92,10 @@
                             <td><span class="material-icons">keyboard_arrow_right</span>
                             <a href="20201020_/index.php"> ATIVIDADE BIMESTRAL 2: Playlist de Musica</a><hr /></td>
                         </tr>
+                        <tr>
+                            <td><span class="material-icons">keyboard_arrow_right</span>
+                            <a href="20201104/index.php"> Revisão 1° e 2° Bimiestre: BIBLIOTECA</a><hr /></td>
+                        </tr>
                     </table>
                 </div>
             </div>
