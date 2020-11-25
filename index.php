@@ -96,6 +96,14 @@
                             <td><span class="material-icons">keyboard_arrow_right</span>
                             <a href="20201104/index.php"> Revisão 1° e 2° Bimiestre: BIBLIOTECA</a><hr /></td>
                         </tr>
+                        <tr>
+                            <td><span class="material-icons">keyboard_arrow_right</span>
+                            <a href="20201110/index.php"> DELETE_BIBLIOTECA</a><hr /></td>
+                        </tr>
+                        <tr>
+                            <td><span class="material-icons">keyboard_arrow_right</span>
+                            <a href="20201117/index.php"> ALTERAR_BIBLIOTECA</a><hr /></td>
+                        </tr>
                     </table>
                 </div>
             </div>
