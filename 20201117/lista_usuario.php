@@ -42,7 +42,8 @@
             <td>
                 <button class="btn btn-dark alterar_usuario" value="'.$linha["cpf"].'" data-toggle="modal"
                         data-target="#modal">Alterar</button>
-                <button class="btn btn-dark remover_usuario" value="'.$linha["cpf"].'">Remover</button>
+                <button class="btn btn-dark remover_usuario" value="'.$linha["cpf"].'" data-toggle="modal"
+                    data-target="#modal_remover">Remover</button>
                 </td>
         </tr>'; 
         $i++;
@@ -55,11 +56,13 @@
     echo "</tbody></table>";
 
     echo "<hr/> </ul></div>";
-    echo'</div><div id="inserido"></div></center>';
     $titulo = "Alterar Usuario";
     $salvar = "salvar_usuario";
     $nome_form = "form_alterar_usuario.php";
+    $remover="remover_usuario";
+    $titulo_remover="Remover Usuario";
     include "modal.php";
+    include "modal_remover.php";
     rodape();
 
 ?>

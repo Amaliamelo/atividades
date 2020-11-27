@@ -17,16 +17,21 @@ function define_alterar_remover_usuario(){
         c="cpf";
         t="usuario";
         p={tabela: t, id: i, coluna:c}
-        $.get("remover.php",p, function(r){
-            console.log(r);
-            if(r=='1'){
-                $("#msg").html("Usuario removido com sucesso!");
-                $("button[value='"+i+"']").closest("tr").remove();
-            }
-            else{
-                $("#msg").html("Essa ação não pode ser efetuada!");
-            }
+        $("#remover_usuario").click(function(){
+            $.get("remover.php",p, function(r){
+                console.log(r);
+                if(r=='1'){
+                    $("#msg").html("Usuario removido com sucesso!");
+                    $("button[value='"+i+"']").closest("tr").remove();
+                    $(".close").click();
+                }
+                else{
+                    $("#msg").html("Essa ação não pode ser efetuada!");
+                    $(".close").click();
+                }
+            });
         });
+        
     });
 }
     $(function(){

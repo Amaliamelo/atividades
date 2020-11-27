@@ -76,7 +76,8 @@
                 <td>
                     <button class="btn btn-dark alterar_emprestimo" value="'.$linha["id_emprestimo"].'" data-toggle="modal"
                         data-target="#modal">Alterar</button>
-                    <button class="btn btn-dark remover_emprestimo" value="'.$linha["id_emprestimo"].'">Remover</button>
+                    <button class="btn btn-dark remover_emprestimo" value="'.$linha["id_emprestimo"].'"data-toggle="modal"
+                        data-target="#modal_remover">Remover</button>
                 </td>
             </tr>';
             $i++; 
@@ -90,7 +91,10 @@
     $titulo = "Alterar Emprestimo";
     $salvar = "salvar_emprestimo";
     $nome_form = "form_alterar_emprestimo.php";
+    $remover="remover_emprestimo";
+    $titulo_remover="Remover Emprestimo";
     include "modal.php";
+    include "modal_remover.php";
     rodape();
 
 ?>

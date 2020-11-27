@@ -54,22 +54,24 @@ cabecalho();
             <td style="font-style:italic;">'.$linha["editora"].'</td>
             <td style="font-style:italic;">'.$linha["nome_genero"].'</td>
             <td>
-            <td>
                 <button class="btn btn-dark alterar_livro" value="'.$linha["id_livro"].'" data-toggle="modal"
-                        data-target="#modal">Alterar</button>
-                <button class="btn btn-dark remover_livro" value="'.$linha["id_livro"].'">Remover</button>
-            </td>            </td>
+                data-target="#modal">Alterar</button>
+                <button class="btn btn-dark remover_livro" value="'.$linha["id_livro"].'" data-toggle="modal"
+                    data-target="#modal_remover">Remover</button>
+            </td>       
         </tr>'; 
     }
 
-    echo "</tbody></table>";
+    echo "</tbody></table></div><hr/>";
 
-    echo "<hr/> </ul></div>";
-    echo'</div><div id="inserido"></div></center>';
     $titulo = "Alterar Livro";
     $salvar = "salvar_livro";
     $nome_form = "form_alterar_livro.php";
+    $remover="remover_livro";
+    $titulo_remover="Remover Livro";
+    include "modal_remover.php";
     include "modal.php";
+
 rodape();
 
 ?>

@@ -40,15 +40,19 @@ function define_alterar_remover_emprestimo(){
         c="id_emprestimo";
         t="emprestimo";
         p={tabela: t, id: i, coluna:c}
-        $.get("remover.php",p, function(r){
-            if(r=='1'){
-                $("#msg").html("Emprestimo removido com sucesso!");
-                $("button[value='"+i+"']").closest("tr").remove();
-            }
-            else{
-                $("#msg").html("Essa ação não pode ser efetuada!");
-            }
-        }); 
+        $("#remover_emprestimo").click(function(){
+            $.get("remover.php",p, function(r){
+                if(r=='1'){
+                    $("#msg").html("Emprestimo removido com sucesso!");
+                    $("button[value='"+i+"']").closest("tr").remove();
+                    $(".close").click();
+                }
+                else{
+                    $("#msg").html("Essa ação não pode ser efetuada!");
+                    $(".close").click();
+                }
+            }); 
+        })
     });
 }
  $(function(){

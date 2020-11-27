@@ -32,7 +32,8 @@
                 <td>
                     <button class="btn btn-dark alterar_genero" value="'.$linha["id_genero"].'" data-toggle="modal"
                         data-target="#modal">Alterar</button>
-                    <button class="btn btn-dark remover_genero" value="'.$linha["id_genero"].'">Remover</button>
+                    <button class="btn btn-dark remover_genero" value="'.$linha["id_genero"].'"data-toggle="modal"
+                    data-target="#modal_remover">Remover</button>
                 </td>
                 </tr>';
         }
@@ -41,9 +42,12 @@
         echo'</tbody></table></div><div id="inserido"></div></center>';
 
         $titulo = "Alterar Genero";
+        $remover="remover_genero";
+        $titulo_remover="Remover Genero";
         $salvar = "salvar_genero";
         $nome_form = "form_alterar_genero.php";
         include "modal.php";
+        include "modal_remover.php";
      
         rodape();
         

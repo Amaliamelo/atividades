@@ -17,15 +17,19 @@ function define_alterar_remover_genero(){
         c="id_genero";
         t="genero";
         p={tabela: t, id: i, coluna:c}
-        $.get("remover.php",p, function(r){
-            if(r=='1'){
-                $("#msg").html("Genero removido com sucesso!");
-                $("button[value='"+i+"']").closest("tr").remove();
-            }
-            else{
-                $("#msg").html("Essa ação não pode ser efetuada!");
-            }
-        });
+        $("#remover_genero").click(function(){
+            $.get("remover.php",p, function(r){
+                if(r=='1'){
+                    $("#msg").html("Genero removido com sucesso!");
+                    $("button[value='"+i+"']").closest("tr").remove();
+                    $(".close").click();
+                }
+                else{
+                    $("#msg").html("Essa ação não pode ser efetuada!");
+                    $(".close").click();
+                }
+            });
+        })
     });
 }
  $(function(){
