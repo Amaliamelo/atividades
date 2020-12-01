@@ -10,7 +10,6 @@ function define_alterar_remover_usuario(){
             $("input[name='email']").val(a.email);
             $("input[name='telefone']").val(a.telefone);
             $("input[name='cep']").val(a.cep);
-            $("input[name='senha']").val(a.senha);
         });
     });
     $("#remover_usuario").click(function(){
@@ -39,18 +38,15 @@ function define_alterar_remover_usuario(){
         
         define_alterar_remover_usuario();
         $("#salvar_usuario").click(function(){ 
-           var senha_cod=$("input[name='senha']").val();
-           $.post("exemploMD5.php",{"senha":senha_cod}, function(m){
                 p = {
                     cpf:$("input[name='cpf']").val(),
                     nome_usuario:$("input[name='nome_usuario_modal']").val(),
                     email:$("input[name='email']").val(),
                     telefone:$("input[name='telefone']").val(),
                     cep:$("input[name='cep']").val(),
-                    senha:m,
                     aux:0
                 };   
-                
+
                 $.post("atualizar.php",p,function(r){
                     if(r=='1'){
                         $("#msg").html("Usuario alterado com sucesso.");
@@ -60,7 +56,6 @@ function define_alterar_remover_usuario(){
                         $("#msg").html("Falha ao atualizar Usuario.");
                     }
                 });
-            });     
            
        }); 
        function atualizar_tabela_usuario(){ 
@@ -74,7 +69,6 @@ function define_alterar_remover_usuario(){
                     t +=    "<td>"+a.email+"</td>";
                     t +=    "<td>"+a.telefone+"</td>";
                     t +=    "<td>"+a.cep+"</td>";
-                    t +=    "<td>"+a.senha+"</td>";
                     t +=    "<td>";
                     t +=        "<button class='btn btn-dark alterar_usuario' value='"+a.cpf+"' data-toggle='modal' data-target='#modal'>Alterar</button>";
                     t +=        " <button class='btn btn-dark remover_usuario' value='"+a.cpf+"'>Remover</button>";

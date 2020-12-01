@@ -28,7 +28,6 @@
             <th>Email</th>
             <th>Telefone</th>
             <th>CEP</th>
-            <th>Senha</th>
         </tr>
     </thead>
     <tbody id="tbody_usuario">';
@@ -40,7 +39,6 @@
             <td style="font-style:italic;">'.$linha["email"].'</td>
             <td style="font-style:italic;">'.$linha["telefone"].'</td>
             <td style="font-style:italic;">'.$linha["cep"].'</td>
-            <td style="font-style:italic;">'.$linha["senha"].'</td>
             <td>
                 <button class="btn btn-dark alterar_usuario" value="'.$linha["cpf"].'" data-toggle="modal"
                         data-target="#modal">Alterar</button>

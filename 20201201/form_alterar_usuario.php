@@ -15,8 +15,5 @@
         <div class="form-group">
                 <input type="number" name="cep"   placeholder = "CEP..." class="form-control">
         </div>
-        <div class="form-group">
-                <input type="password" name="senha"   placeholder = "Senha..." class="form-control">
-        </div>
     </div>
 </form>

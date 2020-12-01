@@ -8,14 +8,12 @@
             $email = $_POST["email"];
             $telefone = $_POST["telefone"];
             $cep = $_POST["cep"];
-            $senha = $_POST["senha"];
 
 
             $update = "UPDATE usuario SET nome_usuario='$nome_usuario',
                                         email='$email',
                                         cep='$cep',
-                                        telefone='$telefone',
-                                        senha='$senha' WHERE
+                                        telefone='$telefone' WHERE
                                         cpf='$cpf'";
 
             mysqli_query($conexao,$update)
