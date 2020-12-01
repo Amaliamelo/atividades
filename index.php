@@ -104,6 +104,10 @@
                             <td><span class="material-icons">keyboard_arrow_right</span>
                             <a href="20201117/index.php"> ALTERAR_BIBLIOTECA</a><hr /></td>
                         </tr>
+                        <tr>
+                            <td><span class="material-icons">keyboard_arrow_right</span>
+                            <a href="20201201/index.php"> LOGIN_BIBLIOTECA</a><hr /></td>
+                        </tr>
                     </table>
                 </div>
             </div>
