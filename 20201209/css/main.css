@@ -1,0 +1,91 @@
+body{
+    background-image: url("../img/logo.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-attachment: fixed;
+
+
+}
+#inserido{
+  color: white;
+}
+.nav{
+  background: linear-gradient(to top, #614c34, #e2cebcc4);
+
+}
+.nav-btn{
+  background:black;
+}
+.titulo{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 1000;
+  text-align: center;
+  color: white;
+  font-size: 200%;
+ 
+}
+.table2{
+  background-color: rgba(125, 125, 125, 0.4);
+  color:white;
+}
+footer {
+    position: fixed;
+    height: 50px;
+    padding:15px;
+    text-align:center;
+    font-weight:bold;
+    bottom: 0;
+    width: 100%;
+}
+.aux{
+  margin-left:10px;
+  
+}
+div{
+    padding:10px;
+}
+
+a:link {
+    color: black;
+    font-weight:bold;
+  }
+  a:visited {
+    color: black;
+    font-weight:bold;
+  }
+  
+  li{
+    color: black;
+      margin-left:10px;
+  }
+
+.login-form {
+  margin-top: 1vh;
+  padding: 20px 20px 5px 30px;
+  background-color: rgba(0, 0, 0, .5);
+  color: #FFF;
+}
+
+
+.login-form h5{
+  margin: 0 0 30px;
+  font-size: 1.2em;
+}
+.material-icons{
+  width: 2em; 
+  height: 2em;
+}
+.lista li{
+  color: rgb(255, 255, 255);
+  padding-top: 10px;
+  padding-right: 90px;
+  font-size: 25px;
+}
+.linha{
+	border-left: 2px solid rgb(255, 255, 255);
+  height: auto;
+}
+.listagem_livros {
+  background-color: rgba(0, 0, 0, .5);
+  color: #FFF;
+}

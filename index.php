@@ -107,6 +107,10 @@
                         <tr>
                             <td><span class="material-icons">keyboard_arrow_right</span>
                             <a href="20201201/index.php"> LOGIN_BIBLIOTECA</a><hr /></td>
+                        </tr> 
+                        <tr>
+                            <td><span class="material-icons">keyboard_arrow_right</span>
+                            <a href="20201209/index.php"> AUTENTICAÇÃO_BIBLIOTECA</a><hr /></td>
                         </tr>
                     </table>
                 </div>
