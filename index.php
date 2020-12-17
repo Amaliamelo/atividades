@@ -110,7 +110,7 @@
                         </tr> 
                         <tr>
                             <td><span class="material-icons">keyboard_arrow_right</span>
-                            <a href="20201209/index.php"> AUTENTICAÇÃO_BIBLIOTECA</a><hr /></td>
+                            <a href="20201209/index.php"> ATIVIDADE BIMESTRAL 3: Biblioteca</a><hr /></td>
                         </tr>
                     </table>
                 </div>
