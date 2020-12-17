@@ -26,7 +26,8 @@
                         <th>Email</th>
                         <th>Telefone</th>
                         <th>CEP</th>
-                        <th>permissao</th>
+                        <th>Permissao</th>
+                        <th>Ações</th>
                     </tr>
                 </thead>
                 <tbody id="tbody_usuario">';
