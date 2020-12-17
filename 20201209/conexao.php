@@ -1,8 +1,8 @@
 <?php
-    $host = "localhost";
-    $usuario = "root";
-    $senha = "";
-    $bd = "biblioteca";
+    $host = "db4free.net";
+    $usuario = "amaliamelo";
+    $senha = "93065637";
+    $bd = "livraria";
 
     if(!$conexao = mysqli_connect($host,$usuario,$senha,$bd)){
         echo "Falha na Conexão";
