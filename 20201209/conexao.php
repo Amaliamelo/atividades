@@ -1,6 +1,6 @@
 <?php
     $host = "db4free.net";
-    $usuario = "amaliamelo";
+    $usuario = "amaliamelo02";
     $senha = "93065637";
     $bd = "livraria";
 
