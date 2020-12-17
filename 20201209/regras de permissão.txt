@@ -1,0 +1,17 @@
+--Usuario não autenticado--
+    *acesso a pagina inicial com o catalogo de todos os
+    livros existentes na biblioteca
+
+--Usuario autenticado--
+    *acesso a pagina de boas vindas
+    *acesso a todos os livros da biblioteca
+    *acesso a lista de seus emprestimos
+    *acesso aos seus dados pessoais e permissão para altera-los
+    (exceto o seu nível de permissão)
+
+--Administrador--
+    *acesso a pagina de boas vindas
+    *permissçao para cadastrar generos, livros, e emprestimos
+    *permissão para alterar generos, livros, emprestimos e nivel de permissão do Usuario
+    *permissão para remover generos, livro, emprestimos e usuarios
+    *acesso a lista de generos, livros, emprestimos e usuarios cadastrados

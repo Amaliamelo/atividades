@@ -22,10 +22,10 @@ function cabecalho(){
         </head>
         <body>                
             <nav class='navbar navbar-expand-lg nav'>
-                <a href='#' class='navbar-brand logotipo'>
+                <a href='index.php' class='navbar-brand logotipo'>
                     <img src='img/logo2.png' class='rounded' alt='$alt' />
                 </a>
-                <a class='navbar-brand center' href='#' '>Biblioteca</a>
+                <a class='navbar-brand center' href='index.php' '>Biblioteca</a>
 
                 <!-- botão que aparece quando a tela for pequena -->
                 <button class='btn-dark dark navbar-toggler nav-btn' type='button'

@@ -26,7 +26,7 @@
         while($linha = mysqli_fetch_assoc($resultado)){
             
                echo' <div class="col">
-                    <div class="card mb-4" style="height:100%;">
+                    <div class="card mb-4 " style="height:100%; color:black; background: linear-gradient(to top, #614c34, #e2cebcc4);">
                         <div class="card-header">
                             <h4 class="my-0 fw-normal">'.$linha["nome_genero"].'</h4>
                         </div>
@@ -36,7 +36,7 @@
                                 <li>AUTOR: '.$linha["autor"].'</li>
                                 <li>EDITORA: '.$linha["editora"].'</li>                           
                             </ul>
-                            <button type="button" class="btn btn-outline-dark" data-toggle="modal"data-target="#modal_login">
+                            <button type="button" class="btn btn-outline-light" data-toggle="modal"data-target="#modal_login">
                                     Faça o login para efetuar emprestimo!
                             </button> 
                         </div>

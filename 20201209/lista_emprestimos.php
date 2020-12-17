@@ -3,6 +3,8 @@
 
     cabecalho();
     if($_SESSION["permissao"]=="2"){
+        echo'<h3 class="titulo" style=" text-align: left;">Meus Emprestimos</h3></br>';
+
         $cpf=$_SESSION["usuario"];
         $select = "SELECT nome_genero, titulo, nome_usuario,
         data_emprestimo, id_emprestimo FROM emprestimo 

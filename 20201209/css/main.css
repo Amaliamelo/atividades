@@ -1,8 +1,8 @@
 body{
     background-image: url("../img/logo.jpg");
-    background-repeat: no-repeat;
-    background-size: auto;
     background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
 
 
 }
