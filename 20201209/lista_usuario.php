@@ -35,7 +35,7 @@
             while($linha = mysqli_fetch_assoc($resultado)){
             echo '<tr>
                     <td style="font-style:italic;">'.$linha["cpf"].'</td>
-                    <td style="font-style:italic;>'.$linha["nome_usuario"].'</td>
+                    <td style="font-style:italic;">'.$linha["nome_usuario"].'</td>
                     <td style="font-style:italic;" >'.$linha["email"].'</td>
                     <td style="font-style:italic;">'.$linha["telefone"].'</td>
                     <td style="font-style:italic;">'.$linha["cep"].'</td>
