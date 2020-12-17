@@ -19,7 +19,6 @@
                     <tr>
                         <th>Genero</th>
                         <th>Livro</th>
-                        <th>Usuario</th>
                         <th>Data</th>
                     </tr>
                 </thead>
@@ -31,13 +30,12 @@
             echo '<tr>
                     <td style="font-style:italic;">'.$linha["nome_genero"].'</td>
                     <td style="font-style:italic;">'.$linha["titulo"].'</td>
-                    <td style="font-style:italic;">'.$linha["nome_usuario"].'</td>
                     <td>'.date("d/m/y", strtotime($linha["data_emprestimo"])).'</td>
                 </tr>';
                 $i++; 
         }
         if($i==0){
-            echo'<td style="font-style:italic; colspan="6"">Nenhum Emprestimo Realizado</td>';
+            echo'<td style="font-style:italic;" colspan="3">Nenhum Emprestimo Realizado</td>';
 
         }
     }

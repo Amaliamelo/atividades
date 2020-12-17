@@ -25,7 +25,7 @@
                         <input type="number" name="telefone"  placeholder = "Telefone..." class="form-control">
                 </div>
                 <div class="form-group col-md-4">
-                        <input type="number" name="cep"   placeholder = "CEP..." class="form-control">
+                        <input type="cep" name="cep"   placeholder = "CEP..." class="form-control">
                 </div>
                 <div class="form-group col-md-6">
                     <input type="password" name="senha"   placeholder = "Senha..." class="form-control">
