@@ -1,34 +1,65 @@
 
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="utf-8">
     <title>Atividades da AmaliaMelo</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css"  href="css/css.css" />
+    <script src="js/jquery-3.5.1.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
+    <script>
+         $(document).ready(function(){
+            var tamanhoFont = 16;
+            $(".aumentar_letras").click(function(){
+                    tamanhoFont = tamanhoFont+2;
+                    $(".body").css({"font-size" : tamanhoFont+"px"});
+                
+            });
+            $(".diminuir_letras").click(function(){
+                    tamanhoFont = tamanhoFont-1;
+                    $(".body").css({"font-size" : tamanhoFont+"px"});
+            });
+            var contraste=0;
+            $(".contraste").click(function(){
+                    if(contraste==0){
+                        $("body")
+                        .css("background-color", "black")
+                        .css("color", "white");
+                        $(".linha").css("border-color","white");
+                        $("a").css("color"," white");
+                        contraste=1;
+                    }else{
+                        $("body")
+                        .css("background-color", "white")
+                        .css("color", "black");
+                        $(".linha").css("border-color","black");
+                        $("a:link").css("color","black");
+                        contraste=0;
+                    };
+             });
+        });
+    </script>
   </head>
-  <body>
+  <body class="body">
         <header>
             <nav class="navbar navbar-expand-md navbar-warning bg-warning">
-                <a class="navbar-brand" href="#">Atividades</a>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="navbar-brand">Atividades</a>
+                    </li>
+                </ul> 
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <button type="button" class="nav-link btn btn-outline-dark aumentar_letras" style="margin-right:10px;" >A+</button>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="nav-link btn btn-outline-dark diminuir_letras" style="margin-right:10px;"> A-</button>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="nav-link btn btn-outline-dark contraste"style="margin-right:10px;"> contraste</button>
+                    </li>
+                </ul>
             </nav>
         </header>
 
@@ -36,21 +67,21 @@
 
             <div class="row">
                 <div class="col" >
-                    <img src="img/eu.jpg" class="eu"></img>
+                    <img src="img/eu.jpg" class="eu" alt="Foto do Perfil da Amália Melo"></img>
                     <h2>Amália Vitoria de Melo</h2>
                     <table>
-                        <!--<tr>
+                        <tr>
                             <td><span class="material-icons">contacts</span>
-                            <a href="https://linkedin.com/in/amália-melo-a2b72b1a0" >Linkedin.com/amália-melo</td>
-                        </tr>-->
+                            <a href="https://linkedin.com/in/amália-melo-a2b72b1a0" >Linkedin.com/amália-melo</a></td>
+                        </tr>
                         <tr>
                             <td><span class="material-icons">email</span>
                             amaliamelovitoria@gmail.com</td>
                         </tr>
                     </table>
                 </div>
-                <div class="linha"></div>
                 <div class="col-8" >
+                <div class="linha"></div>
                     <table>
                         <tr>
                             <td><span class="material-icons">keyboard_arrow_right</span>
@@ -112,6 +143,14 @@
                             <td><span class="material-icons">keyboard_arrow_right</span>
                             <a href="20201209/index.php"> ATIVIDADE BIMESTRAL 3: Biblioteca</a><hr /></td>
                         </tr>
+                        <tr>
+                            <td><span class="material-icons">keyboard_arrow_right</span>
+                            <a href="20201222/index.php">Biblioteca novas funcionalidades</a><hr /></td>
+                        </tr>
+                        <tr>
+                            <td><span class="material-icons">keyboard_arrow_right</span>
+                            <a href="20210105/index.php">Acessibilidade na Web</a><hr /></td>
+                        </tr>
                     </table>
                 </div>
             </div>
@@ -119,7 +158,6 @@
 
         <footer class="footer fixed-bottom text-center">
         </footer>
-       <script src="js/jquery-3.2.1.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/validaform.min.js"></script>
     </body>
