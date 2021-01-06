@@ -23,16 +23,14 @@
             var contraste=0;
             $(".contraste").click(function(){
                     if(contraste==0){
-                        $("body")
-                        .css("background-color", "black")
-                        .css("color", "white");
+                        $("body").css("background-color", "black")
+                        $(".container").css("color", "white");
                         $(".linha").css("border-color","white");
                         $("a").css("color"," white");
                         contraste=1;
                     }else{
-                        $("body")
-                        .css("background-color", "white")
-                        .css("color", "black");
+                        $("body").css("background-color", "white")
+                        $(".container").css("color", "black");
                         $(".linha").css("border-color","black");
                         $("a:link").css("color","black");
                         contraste=0;
@@ -46,7 +44,7 @@
             <nav class="navbar navbar-expand-md navbar-warning bg-warning">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="navbar-brand">Atividades</a>
+                        <h1 class="navbar-brand">Atividades</h1>
                     </li>
                 </ul> 
                 <ul class="navbar-nav">
@@ -66,92 +64,89 @@
         <div class="container">
 
             <div class="row">
-                <div class="col" >
+                <div class="col-sm" >
                     <img src="img/eu.jpg" class="eu" alt="Foto do Perfil da Amália Melo"></img>
                     <h2>Amália Vitoria de Melo</h2>
-                    <table>
-                        <tr>
-                            <td><span class="material-icons">contacts</span>
-                            <a href="https://linkedin.com/in/amália-melo-a2b72b1a0" >Linkedin.com/amália-melo</a></td>
-                        </tr>
-                        <tr>
-                            <td><span class="material-icons">email</span>
-                            amaliamelovitoria@gmail.com</td>
-                        </tr>
-                    </table>
+                    <li>
+                        <span class="material-icons">contacts</span>
+                        <a href="https://linkedin.com/in/amália-melo-a2b72b1a0" >Linkedin.com/amália-melo</a>
+                    </li>
+                    <li>
+                        <span class="material-icons">email</span>
+                        amaliamelovitoria@gmail.com
+                    </li>
                 </div>
-                <div class="col-8" >
                 <div class="linha"></div>
-                    <table>
-                        <tr>
-                            <td><span class="material-icons">keyboard_arrow_right</span>
-                            <a href="20200812/index.php">Editor de Texto - JEQUERY<hr /></td>
-                        </tr>
-                        <tr>
-                            <td><span class="material-icons">keyboard_arrow_right</span>
-                            <a href="20200819/index.php">Engenharia Reversa</a><hr /></td>
-                        </tr>
-                        <tr>
-                            <td><span class="material-icons">keyboard_arrow_right</span>
-                            <a href="20200825/index.php">Engenharia Reversa - AJAX_JEQUERY</a><hr /></td>
-                        </tr>
-                        <tr>
-                            <td><span class="material-icons">keyboard_arrow_right</span>
-                            <a href="20200826/index.php">Editor de Texto - AJAX_JEQUERY</a><hr /></td>
-                        </tr>
-                        <tr>
-                            <td><span class="material-icons">keyboard_arrow_right</span>
-                            <a href="20200902/index.php">  Procurando Cep- JSON</a><hr /></td>
-                        </tr>
-                        <tr>
-                            <td><span class="material-icons">keyboard_arrow_right</span>
-                            <a href="20200910/index.php"> ATIVIDADE BIMESTRAL 1: Procurando Pesquisa de nomes_API IBGE</a><hr /></td>
-                        </tr>
-                        <tr>
-                            <td><span class="material-icons">keyboard_arrow_right</span>
-                            <a href="20200923/index.php"> Atividade em grupo - Taxonomia</a><hr /></td>
-                        </tr>
-                        <tr>
-                            <td><span class="material-icons">keyboard_arrow_right</span>
-                            <a href="20200930/index.php"> Atividade em grupo - Taxonomia - FILTROS</a><hr /></td>
-                        </tr>
-                        <tr>
-                            <td><span class="material-icons">keyboard_arrow_right</span>
-                            <a href="20201014/index.php"> Atividade em grupo - Taxonomia - Inserts</a><hr /></td>
-                        </tr>
-                        <tr>
-                            <td><span class="material-icons">keyboard_arrow_right</span>
-                            <a href="20201020_/index.php"> ATIVIDADE BIMESTRAL 2: Playlist de Musica</a><hr /></td>
-                        </tr>
-                        <tr>
-                            <td><span class="material-icons">keyboard_arrow_right</span>
-                            <a href="20201104/index.php"> Revisão 1° e 2° Bimiestre: BIBLIOTECA</a><hr /></td>
-                        </tr>
-                        <tr>
-                            <td><span class="material-icons">keyboard_arrow_right</span>
-                            <a href="20201110/index.php"> DELETE_BIBLIOTECA</a><hr /></td>
-                        </tr>
-                        <tr>
-                            <td><span class="material-icons">keyboard_arrow_right</span>
-                            <a href="20201117/index.php"> ALTERAR_BIBLIOTECA</a><hr /></td>
-                        </tr>
-                        <tr>
-                            <td><span class="material-icons">keyboard_arrow_right</span>
-                            <a href="20201201/index.php"> LOGIN_BIBLIOTECA</a><hr /></td>
-                        </tr> 
-                        <tr>
-                            <td><span class="material-icons">keyboard_arrow_right</span>
-                            <a href="20201209/index.php"> ATIVIDADE BIMESTRAL 3: Biblioteca</a><hr /></td>
-                        </tr>
-                        <tr>
-                            <td><span class="material-icons">keyboard_arrow_right</span>
-                            <a href="20201222/index.php">Biblioteca novas funcionalidades</a><hr /></td>
-                        </tr>
-                        <tr>
-                            <td><span class="material-icons">keyboard_arrow_right</span>
-                            <a href="20210105/index.php">Acessibilidade na Web</a><hr /></td>
-                        </tr>
-                    </table>
+                <div class="col-sm" >
+                        
+                        <li>
+                            <span class="material-icons">play_circle</span>
+                            <a href="20200812/index.php">Editor de Texto - JEQUERY</a><hr />
+                        </li>
+                        <li>
+                            <span class="material-icons">play_circle</span>
+                            <a href="20200819/index.php">Engenharia Reversa</a><hr />
+                        </li>
+                        <li>
+                            <span class="material-icons">play_circle</span>
+                            <a href="20200825/index.php">Engenharia Reversa - AJAX_JEQUERY</a><hr />
+                        </li>
+                        <li>
+                            <span class="material-icons">play_circle</span>
+                            <a href="20200826/index.php">Editor de Texto - AJAX_JEQUERY</a><hr />
+                        </li>
+                        <li>
+                            <span class="material-icons">play_circle</span>
+                            <a href="20200902/index.php">  Procurando Cep- JSON</a><hr />
+                        </li>
+                        <li>
+                            <span class="material-icons">play_circle</span>
+                            <a href="20200910/index.php"> ATIVIDADE BIMESTRAL 1: Procurando Pesquisa de nomes_API IBGE</a><hr />
+                        </li>
+                        <li>
+                            <span class="material-icons">play_circle</span>
+                            <a href="20200923/index.php"> Atividade em grupo - Taxonomia</a><hr />
+                        </li>
+                        <li>
+                            <span class="material-icons">play_circle</span>
+                            <a href="20200930/index.php"> Atividade em grupo - Taxonomia - FILTROS</a><hr />
+                        </li>
+                        <li>
+                            <span class="material-icons">play_circle</span>
+                            <a href="20201014/index.php"> Atividade em grupo - Taxonomia - Inserts</a><hr />
+                        </li>
+                        <li>
+                            <span class="material-icons">play_circle</span>
+                            <a href="20201020_/index.php"> ATIVIDADE BIMESTRAL 2: Playlist de Musica</a><hr />
+                        </li>
+                        <li>
+                            <span class="material-icons">play_circle</span>
+                            <a href="20201104/index.php"> Revisão 1° e 2° Bimiestre: BIBLIOTECA</a><hr />
+                        </li>
+                        <li>
+                            <span class="material-icons">play_circle</span>
+                            <a href="20201110/index.php"> DELETE_BIBLIOTECA</a><hr />
+                        </li>
+                        <li>
+                            <span class="material-icons">play_circle</span>
+                            <a href="20201117/index.php"> ALTERAR_BIBLIOTECA</a><hr />
+                        </li>
+                        <li>
+                            <span class="material-icons">play_circle</span>
+                            <a href="20201201/index.php"> LOGIN_BIBLIOTECA</a><hr />
+                        </li> 
+                        <li>
+                            <span class="material-icons">play_circle</span>
+                            <a href="20201209/index.php"> ATIVIDADE BIMESTRAL 3: Biblioteca</a><hr />
+                        </li>
+                        <li>
+                            <span class="material-icons">play_circle</span>
+                            <a href="20201222/index.php">Biblioteca novas funcionalidades</a><hr />
+                        </li>
+                        <li>
+                            <span class="material-icons">play_circle</span>
+                            <a href="20210105/index.php">Acessibilidade na Web</a><hr />
+                        </li>
                 </div>
             </div>
         </div>
