@@ -1,0 +1,90 @@
+footer {
+    padding:15px;
+    text-align:center;
+    font-weight:bold;
+    margin-top: 16%;
+}
+body {
+  min-height: 100vh;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size:1em;
+  text-align: center;
+}
+
+.navbar {
+    border-radius:5px;
+    -webkit-box-shadow: 0 5px 2px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0 5px 2px -6px rgba(0,0,0,0.75);
+    box-shadow: 0 8px 10px -6px rgba(0,0,0,0.75);
+    margin-bottom: 20px;
+    color: white;
+
+}
+div{
+    padding:10px;
+}
+
+a:link, a:hover, a:active, a:visited{
+  color:rgb(255, 255, 255);
+}
+.dropdown:hover .dropdown-menu {
+  border:1px solid #ffffff;
+  display:block;
+  width:100px;
+}
+
+.dropdown-menu a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+}
+
+  a.link_bg_claro {
+    color:  rgb(0, 0, 0);
+    font-weight:bold;
+  }
+
+  li{
+    color: black;
+      margin-left:20px;
+  }
+
+  input, select, button,textarea{
+    margin:10px;
+  }
+
+  table, td, th { border: 1px dotted; margin:auto;padding:5px;}
+ .form_cad{
+    background-color: white;
+    color: black;
+    border-radius:10px;
+    text-align: center;
+    margin-top: 5vh;
+    padding: 20px 30px;
+    -webkit-box-shadow: 0 5px 2px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0 5px 2px -6px rgba(0,0,0,0.75);
+    box-shadow: 0px -6px 20px 10px rgba(0,0,0,0.75);
+  }
+  input{
+    border-radius:5px;
+    border: 1px solid lightslategrey;
+  }
+  #msg {color:green;font-weight:bold;}
+
+  #erro{
+    background-color:red;
+  }
+
+  a{
+    font-size:12px;
+  }
+.navbar{
+  background-color: black;
+}
