@@ -6,7 +6,8 @@ session_start();
         $email = $_POST["email"];
         $senha = $_POST["senha"];
 
-        $sql = "SELECT cpf, id_perfil, email FROM usuario 
+        $sql = "SELECT cpf, id_perfil, email, nivel, descricao FROM usuario INNER JOIN perfil ON 
+        usuario.id_perfil = perfil.nivel_permissao INNER JOIN permissao ON  perfil.nivel_permissao = permissao.nivel
         WHERE email=? AND senha=? ";
         
         $stmt=mysqli_prepare($conexao, $sql);
@@ -24,11 +25,14 @@ session_start();
             $_SESSION["usuario"]=$linha["cpf"];
             $_SESSION["permissao"]=$linha["id_perfil"];
             $_SESSION["email"]=$linha["email"];
+            $_SESSION["descricao"]=$linha["descricao"];
+            $_SESSION["nivel"]=$linha["nivel"];
+
             
             date_default_timezone_set('America/Sao_Paulo');
-            $_SESSION["tempo"]=date('h:i:s');
+            $_SESSION["tempo"]=date('h:i');
             
-            $_SESSION["tempoLimite"]= date("h:i:s",strtotime(date("h:i:s")."+1 minute"));
+            $_SESSION["tempoLimite"]= date("h:i",strtotime(date("h:i:s")."+1 minute"));
 
             /*print_r($_SESSION["tempo"]);
             print_r("  ");
@@ -38,7 +42,7 @@ session_start();
             header("location: index.php");
         }
         else{        
-            header("location: index.php?erro=1");
+            header("location: login.php?erro=1");
         }
 
     }

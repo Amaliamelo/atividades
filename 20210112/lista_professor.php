@@ -4,8 +4,9 @@ session_start();
 
 cabecalho();
 
+
 // caso o acesso for realizado por professor logado....nao permite o acesso
-if($_SESSION["permissao"]=="3"){
+if($_SESSION["permissao"]=="1"){    
     echo "<script>location.href='index.php'</script>";
 }
 
@@ -13,7 +14,6 @@ $select = "SELECT * FROM professor ";
 
 if($_SESSION["permissao"]=="2"){
     $select .= " WHERE prontuario='".$_SESSION["usuario"]."'";
-    echo "<h3>".$_SESSION["email"]."</h3>";
 }
 
 $select.=" ORDER BY nome";
@@ -21,6 +21,7 @@ $r = mysqli_query($conexao,$select)
     or die("Erro: " . mysqli_error($conexao));    
 
 echo "
+
     <div id='msg'></div>
     <table>
         <thead>    

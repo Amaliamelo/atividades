@@ -4,7 +4,7 @@ session_start();
 
 cabecalho();
     if(isset($_SESSION["permissao"])){
-        if($_SESSION["permissao"]=="2"||$_SESSION["permissao"]=="3"){
+        if($_SESSION["permissao"]=="2"||$_SESSION["permissao"]=="1"){
             echo "<script>location.href='index.php'</script>";
         }
     }

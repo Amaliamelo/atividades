@@ -27,9 +27,8 @@ echo "
         echo "<tbody id='tbody_aluno'>";
         $select = "SELECT * FROM aluno";
         
-        if($_SESSION["permissao"]=="3"){
+        if($_SESSION["permissao"]=="1"){
             $select .= " WHERE prontuario='".$_SESSION["usuario"]."'";
-            echo "<h3>".$_SESSION["email"]."</h3>";
         }
 
         $select.= " ORDER BY nome";

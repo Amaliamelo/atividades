@@ -6,7 +6,7 @@ session_start();
 
     if(isset($_SESSION["permissao"])){ 
         cabecalho(); 
-        if($_SESSION["permissao"]=="3"){
+        if($_SESSION["permissao"]=="1"){
             header("location: lista_aluno.php");
             }
             else if($_SESSION["permissao"]=="2"){

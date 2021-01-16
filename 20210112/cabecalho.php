@@ -3,13 +3,13 @@
 function cabecalho(){
     if(isset($_SESSION["tempo"])){
         date_default_timezone_set('America/Sao_Paulo');
-        $_SESSION["tempo"]=date('h:i:s');
+        $_SESSION["tempo"]=date('h:i');
         if($_SESSION["tempo"]>=$_SESSION["tempoLimite"]){
             session_destroy();
             header("location: login.php");
         }
         else{       
-            $_SESSION["tempoLimite"]= date("h:i:s",strtotime(date("h:i:s")."+1 minute"));
+            $_SESSION["tempoLimite"]= date("h:i",strtotime(date("h:i")."+1 minute"));
         }
     }
     $alt = $GLOBALS["alt"];
@@ -44,22 +44,22 @@ function cabecalho(){
                 <ul class='navbar-nav'>";
                 if(isset($_SESSION["usuario"])){   
                     
-                if($_SESSION["permissao"]=="3"){
-                    echo "<h3 role='presentation'>
-                        Aluno
-                    </h3>";
+                if($_SESSION["permissao"]=="1"){
+                    echo "<h5 role='presentation'>
+                    Nivel de permissão: ".$_SESSION["nivel"]." - ".$_SESSION["descricao"]."
+                    </h5>";
 
                 }
                 else if($_SESSION["permissao"]=="2"){
-                    echo "<h3 role='presentation'>
-                        Professor
-                    </h3>";
+                    echo "<h5 role='presentation'>
+                    Nivel de permissão: ".$_SESSION["nivel"]." - ".$_SESSION["descricao"]."
+                    </h5>";
 
                 }                
                 else{
-                    echo "<h3>
-                        Administrador
-                    </h3>
+                    echo "<h5>
+                    Nivel de permissão: ".$_SESSION["nivel"]." - ".$_SESSION["descricao"]."
+                    </h5>
                     <li role='presentation' class='dropdown'>
                             <a class='dropdown-toggle' data-toggle='dropdown' href='#' role='button' aria-haspopup='true' aria-expanded='false'>
                             Cadastrar <span class='caret'></span>
