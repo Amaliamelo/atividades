@@ -147,6 +147,14 @@
                             <span class="material-icons">play_circle</span>
                             <a href="20210105/index.php">Acessibilidade na Web</a><hr />
                         </li>
+                        <li>
+                            <span class="material-icons">play_circle</span>
+                            <a href="20210105/index.php">Sessão com tempo limite</a><hr />
+                        </li>
+                        <li>
+                            <span class="material-icons">play_circle</span>
+                            <a href="20210105/index.php">Gravando e removendo cookies</a><hr />
+                        </li>
                 </div>
             </div>
         </div>
