@@ -1,0 +1,11 @@
+{
+    0 local 0 sessão
+    crio sessão crio local
+    {
+         0 sessao 1 local
+        {
+            1 sessao 1 local
+        }
+       
+   
+}
