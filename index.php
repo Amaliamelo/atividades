@@ -149,11 +149,19 @@
                         </li>
                         <li>
                             <span class="material-icons">play_circle</span>
-                            <a href="20210105/index.php">Sessão com tempo limite</a><hr />
+                            <a href="20210112/index.php">Sessão com tempo limite</a><hr />
                         </li>
                         <li>
                             <span class="material-icons">play_circle</span>
-                            <a href="20210105/index.php">Gravando e removendo cookies</a><hr />
+                            <a href="20210127/PHP/index.php">Gravando e removendo cookies</a><hr />
+                        </li>
+                        <li>
+                            <span class="material-icons">play_circle</span>
+                            <a href="20210203/index.php">Gravando e removendo localStorage</a><hr />
+                        </li>
+                        <li>
+                            <span class="material-icons">play_circle</span>
+                            <a href="20210210/index.php">ATIVIDADE BIMESTRAL 4: Jornal</a><hr />
                         </li>
                 </div>
             </div>
