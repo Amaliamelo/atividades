@@ -34,12 +34,12 @@
             $i=0;
             while($linha = mysqli_fetch_assoc($resultado)){
             echo '<tr>
-                    <td style="font-style:italic;">'.$linha["cpf"].'</td>
-                    <td style="font-style:italic;">'.$linha["nome_usuario"].'</td>
-                    <td style="font-style:italic;" >'.$linha["email"].'</td>
-                    <td style="font-style:italic;">'.$linha["telefone"].'</td>
-                    <td style="font-style:italic;">'.$linha["cep"].'</td>
-                    <td style="font-style:italic;">'.$linha["permissao"].'</td>
+                    <td>'.$linha["cpf"].'</td>
+                    <td>'.$linha["nome_usuario"].'</td>
+                    <td >'.$linha["email"].'</td>
+                    <td>'.$linha["telefone"].'</td>
+                    <td>'.$linha["cep"].'</td>
+                    <td>'.$linha["permissao"].'</td>
                     <td>
                         <button class="btn btn-dark alterar_usuario" value="'.$linha["cpf"].'" data-toggle="modal"
                                 data-target="#modal">Alterar</button>
@@ -75,23 +75,19 @@
         <div id="filtro">
         <div class="row justify-content-center">';
         while($linha = mysqli_fetch_assoc($resultado)){
-            echo '<div class="col col-lg-2">
+            echo '<div class="col-6">
                     <svg class="bd-placeholder-img rounded-circle" width="140" height="140" role="img">
                     <rect width="100%" height="100%" fill="#777"/>
                     <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
                     </svg>
                 </div> 
-                <div class="col col-lg-2 lista" >
+                <div class="col-6" >
                     <ul style="list-style: none;" class="linha">
-                        <li style="font-style:italic;"><b>CPF:</b>&nbsp'.$linha["cpf"].'</li>
-                        <li style="font-style:italic;"><b>Nome:</b>&nbsp'.$linha["nome_usuario"].'</li>
-                        <li style="font-style:italic;"><b>Email:</b>&nbsp'.$linha["email"].'</li>
-                        <li style="font-style:itali;"><b>Telefone:</b>&nbsp'.$linha["telefone"].'</li>
-                        <li style="font-style:italic;"><b>Cep:</b>&nbsp'.$linha["cep"].'</li>
-                        <li>
-                            <button class="btn btn-dark alterar_usuario" value="'.$linha["cpf"].'" data-toggle="modal"
-                                    data-target="#modal">Alterar</button>
-                        </li>
+                        <li><b>CPF:</b>&nbsp'.$linha["cpf"].'</li>
+                        <li><b>Nome:</b>&nbsp'.$linha["nome_usuario"].'</li>
+                        <li><b>Email:</b>&nbsp'.$linha["email"].'</li>
+                        <li><b>Telefone:</b>&nbsp'.$linha["telefone"].'</li>
+                        <li><b>Cep:</b>&nbsp'.$linha["cep"].'</li>
                     </ul>
                 </div>'; 
         }
