@@ -76,63 +76,63 @@ $(document).ready(function(){
             }
         }
 
-       
-
-   
+    $("form *").attr("required","required");
     
     $(".cad_assinante").click(function() {
         var senha=$("input[name='senha_cad']").val();
         var confirmacao_senha =$("input[name='confirmar_senha']").val();
-        
-            if(senha==confirmacao_senha){
-                senha = $.md5(senha);
-                var cpf=$("input[name='cpf']").val();
-                $.post("validar_cpf.php",{"cpf":cpf}, function(m){
-                    console.log(m);
-                    if(m=="CPF valido"){
-                        p = {
-                            cpf:cpf,
-                            nome: $("input[name='nome_cad']").val(),
-                            email: $("input[name='email_cad']").val(),
-                            data: $("input[name='data_cad']").val(),
-                            senha_cod:senha
-                        };
-                        $.post("select.php",p, function(msg){
-                            console.log(msg);
-                            if(msg=="0"){
-                                texto ="<div class='alert alert-danger'role='alert'>CPF já cadastrado, digite outro</div>";
-                                console.log(msg);
-                                $(".msg").html(texto);
-                            }
-                            else{
-                                if(msg=="1"){
-                                    texto ="<div class='alert alert-danger'role='alert'>Email já Cadastrado, digite outro</div>";
-                                    console.log(msg);
+        var cpf = $("input[name='cpf']").val();
+        var nome =  $("input[name='nome_cad']").val();
+        var email = $("input[name='email_cad']").val();
+
+            if(cpf!=""&&nome!=""&&email!=""&&senha!=""&&confirmacao_senha!=""){
+                if(senha==confirmacao_senha){
+                    senha = $.md5(senha);
+                    $.post("validar_cpf.php",{"cpf":cpf}, function(m){
+                        if(m=="CPF valido"){
+                            p = {
+                                cpf:cpf,
+                                nome: nome,
+                                email: email,
+                                data: $("input[name='data_cad']").val(),
+                                senha_cod:senha
+                            };
+                            $.post("select.php",p, function(msg){
+                                if(msg=="0"){
+                                    texto ="<div class='alert alert-danger'role='alert'>CPF já cadastrado, digite outro</div>";
                                     $(".msg").html(texto);
                                 }
                                 else{
-                                    if(msg=="2"){
-                                        $.post("insere.php",p, function(retorno){
-                                            console.log(retorno);
-                                            $(".msg").html(retorno);
-                                        });
+                                    if(msg=="1"){
+                                        texto ="<div class='alert alert-danger'role='alert'>Email já Cadastrado, digite outro</div>";
+                                        $(".msg").html(texto);
+                                    }
+                                    else{
+                                        if(msg=="2"){
+                                            $.post("insere.php",p, function(retorno){
+                                                $(".msg").html(retorno);
+                                            });
+                                        }
                                     }
                                 }
-                            }
-                        });
-                    }
-                    else{
-                        texto ="<div class='alert alert-danger'role='alert'>CPF inválido, digite outro</div>";
-                        $(".msg").html(texto);
-                    }
-                });
-               
-                
-            }else{
-                texto ="<div class='alert alert-danger'role='alert'>Confirmação de senha incorreta</div>";
+                            });
+                        }
+                        else{
+                            texto ="<div class='alert alert-danger'role='alert'>CPF inválido, digite outro</div>";
+                            $(".msg").html(texto);
+                        }
+                    });
+                   
+                    
+                }else{
+                    texto ="<div class='alert alert-danger'role='alert'>Confirmação de senha incorreta</div>";
+                    $(".msg").html(texto);
+                }
+            }
+            else{
+                texto ="<div class='alert alert-danger'role='alert'>Preencha todos os campos</div>";
                 $(".msg").html(texto);
             }
-
     });
 
     $("#autenticar").submit(function(evento) {
@@ -146,11 +146,9 @@ $(document).ready(function(){
 					"senha":$("input[name='senha']").val()
 				};
                 
-        console.log(dados);
 
 			
 		$.post("autenticacao.php", dados, function(retorno){
-            console.log(retorno);
 			if( retorno == "0"){
 				window.location.href ="index.php";
 			}

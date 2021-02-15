@@ -23,10 +23,10 @@
                 <form id="autenticar" action="autenticacao.php" method="post"class="form_login col-6">
                     <h1>Login</h1>
                     <div class="form-group p-3" >
-                        <input type="text" class="form-control" name="email" placeholder="Email">
+                        <input type="text" class="form-control" name="email" placeholder="Email" required="required">
                     </div>
                     <div class="form-group p-3">
-                        <input type="password" class="form-control" name="senha" placeholder="Senha" />
+                        <input type="password" class="form-control" name="senha" placeholder="Senha"  required="required"/>
                     </div>
                     <div>
                     <button type="submit" name="sbmeter" class="btn btn-primary m-3">Entrar</button>
@@ -49,19 +49,19 @@
                 <form  class="d-flex justify-content-center">
                     <div class="form-row  offset-md-6 justify-content-md-center ">
                         <div class="form-group col-md-12">
-                            <input type="cpf" name="cpf"  placeholder = "CPF..." id="cpf" class="form-control " required >
+                            <input type="cpf" name="cpf"  placeholder = "CPF..." id="cpf" class="form-control " required="required">
                         </div>
                         <div class="form-group col-md-12">
-                                <input type="text" name="nome_cad" placeholder = "Nome ..." class="form-control" required>
+                                <input type="text" name="nome_cad" placeholder = "Nome ..." class="form-control" required="required">
                         </div>
                         <div class="form-group col-md-12">
-                                <input type="email" name="email_cad" placeholder = "E-mail..." class="form-control" required>
+                                <input type="email" name="email_cad" placeholder = "E-mail..." class="form-control" required="required">
                         </div>
                         <div class="form-group col-md-6">
-                            <input type="password" name="senha_cad"   placeholder = "Senha..." class="form-control" required>
+                            <input type="password" name="senha_cad"   placeholder = "Senha..." class="form-control" required="required">
                         </div>
                         <div class="form-group col-md-6">
-                            <input type="password" name="confirmar_senha"   placeholder = "Confirme sua senha..." class="form-control" required>
+                            <input type="password" name="confirmar_senha"   placeholder = "Confirme sua senha..." class="form-control" required="required">
                         </div>
                         <div hidden>
                             <input type="date" name="data_cad" value="<?php echo date('Y-m-d');?>" class="form-control"  >
